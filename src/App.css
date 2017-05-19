@@ -25,7 +25,14 @@ body {
  box-shadow:         inset 0 0 3px #000000;
 }
 .container .navbar{
-  background: red; /* not working, let's see some red */
+  background: linear-gradient(left ,
+      rgba(255, 0, 0, 1) 0%,
+      rgba(255, 255, 0, 1) 15%,
+      rgba(0, 255, 0, 1) 30%,
+      rgba(0, 255, 255, 1) 50%,
+      rgba(0, 0, 255, 1) 65%,
+      rgba(255, 0, 255, 1) 80%,
+      rgba(255, 0, 0, 1) 100%);
   background: -moz-linear-gradient( left ,
       rgba(255, 0, 0, 1) 0%,
       rgba(255, 255, 0, 1) 15%,
@@ -44,7 +51,14 @@ body {
       color-stop(100%, rgba(255, 0, 0, 1)));
 }
 hr {
-  background: red; /* not working, let's see some red */
+   background: linear-gradient(left ,
+      rgba(255, 0, 0, 1) 0%,
+      rgba(255, 255, 0, 1) 15%,
+      rgba(0, 255, 0, 1) 30%,
+      rgba(0, 255, 255, 1) 50%,
+      rgba(0, 0, 255, 1) 65%,
+      rgba(255, 0, 255, 1) 80%,
+      rgba(255, 0, 0, 1) 100%);
   background: -moz-linear-gradient( left ,
       rgba(255, 0, 0, 1) 0%,
       rgba(255, 255, 0, 1) 15%,
