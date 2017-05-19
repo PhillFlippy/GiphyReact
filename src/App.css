@@ -3,11 +3,8 @@
 }
 body {
   background: #333333;
-  color: white;
   -webkit-box-pack: center;
-
       -ms-flex-pack: center;
-
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -25,7 +22,7 @@ body {
  box-shadow:         inset 0 0 3px #000000;
 }
 .container .navbar{
-  background-image: linear-gradient(to left ,
+  background-image: linear-gradient(to right ,
       rgba(255, 0, 0, 1) 0%,
       rgba(255, 255, 0, 1) 15%,
       rgba(0, 255, 0, 1) 30%,
@@ -55,7 +52,7 @@ ul li{
   color: white;
 }
 hr {
-   background: linear-gradient(to left ,
+   background: linear-gradient(to right ,
       rgba(255, 0, 0, 1) 0%,
       rgba(255, 255, 0, 1) 15%,
       rgba(0, 255, 0, 1) 30%,
