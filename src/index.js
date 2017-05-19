@@ -6,16 +6,16 @@ import Trending from './Components/Trending.jsx';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Switch
 } from 'react-router-dom'
 
 ReactDOM.render(
   <Router>
-     <div>
+     <Switch>
        <Route exact path="/" component={App}/>
        <Route path="/trending" component={Trending}/>
 
-     </div>
+     </Switch>
    </Router>,
   document.getElementById('root')
 );
