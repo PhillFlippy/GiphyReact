@@ -20,7 +20,7 @@ class App extends Component {
     console.log('query'+query);
     query = encodeURIComponent(query);
     console.log('query2'+query);
-    const BASE_URL = 'http://api.giphy.com/v1/gifs/search?q';
+    const BASE_URL = 'https://api.giphy.com/v1/gifs/search?q';
     let search_url = `${BASE_URL}=${query}&api_key=dc6zaTOxFJmzC`;
     fetch(search_url, {method: 'GET'}).then(response => response.json()).then(json => {
       const list = json.data;
@@ -36,7 +36,7 @@ class App extends Component {
   random(){
     let {query} = this.state;
     query = encodeURIComponent(query);
-    const FETCH_URL = `http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${query}`;
+    const FETCH_URL = `https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${query}`;
     fetch(FETCH_URL, {method: 'GET'}).then(response => response.json()).then(json => {
       const list = json.data;
       console.log('list '+ list.url);
