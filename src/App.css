@@ -3,7 +3,7 @@
 }
 body {
   background: #333333;
-
+  color: white;
   -webkit-box-pack: center;
 
       -ms-flex-pack: center;
@@ -50,6 +50,9 @@ body {
       color-stop(80%, rgba(255, 0, 255, 1)),
       color-stop(100%, rgba(255, 0, 0, 1)));
       
+}
+ul li{
+  color: white;
 }
 hr {
    background: linear-gradient(to left ,
