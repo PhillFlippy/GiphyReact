@@ -25,7 +25,7 @@ body {
  box-shadow:         inset 0 0 3px #000000;
 }
 .container .navbar{
-  background: linear-gradient(left ,
+  background-image: linear-gradient(left ,
       rgba(255, 0, 0, 1) 0%,
       rgba(255, 255, 0, 1) 15%,
       rgba(0, 255, 0, 1) 30%,
@@ -33,7 +33,7 @@ body {
       rgba(0, 0, 255, 1) 65%,
       rgba(255, 0, 255, 1) 80%,
       rgba(255, 0, 0, 1) 100%);
-  background: -moz-linear-gradient( left ,
+  background-image: -moz-linear-gradient( left ,
       rgba(255, 0, 0, 1) 0%,
       rgba(255, 255, 0, 1) 15%,
       rgba(0, 255, 0, 1) 30%,
