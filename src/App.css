@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+body {
+  background: #333333;
+
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica Neue;
+}
+
+.form-group{
+  width: 1000px;
+  margin-left: 20%;
+}
+
+.active{
+  -moz-box-shadow:    inset 0 0 3px #000000;
+ -webkit-box-shadow: inset 0 0 3px #000000;
+ box-shadow:         inset 0 0 3px #000000;
+}
+.container .navbar{
+  background: red; /* not working, let's see some red */
+  background: -moz-linear-gradient( left ,
+      rgba(255, 0, 0, 1) 0%,
+      rgba(255, 255, 0, 1) 15%,
+      rgba(0, 255, 0, 1) 30%,
+      rgba(0, 255, 255, 1) 50%,
+      rgba(0, 0, 255, 1) 65%,
+      rgba(255, 0, 255, 1) 80%,
+      rgba(255, 0, 0, 1) 100%);
+  background: -webkit-gradient(linear,  left ,
+      color-stop(0%, rgba(255, 0, 0, 1)),
+      color-stop(15%, rgba(255, 255, 0, 1)),
+      color-stop(30%, rgba(0, 255, 0, 1)),
+      color-stop(50%, rgba(0, 255, 255, 1)),
+      color-stop(65%, rgba(0, 0, 255, 1)),
+      color-stop(80%, rgba(255, 0, 255, 1)),
+      color-stop(100%, rgba(255, 0, 0, 1)));
+}
+hr {
+  background: red; /* not working, let's see some red */
+  background: -moz-linear-gradient( left ,
+      rgba(255, 0, 0, 1) 0%,
+      rgba(255, 255, 0, 1) 15%,
+      rgba(0, 255, 0, 1) 30%,
+      rgba(0, 255, 255, 1) 50%,
+      rgba(0, 0, 255, 1) 65%,
+      rgba(255, 0, 255, 1) 80%,
+      rgba(255, 0, 0, 1) 100%);
+  background: -webkit-gradient(linear,  left ,
+      color-stop(0%, rgba(255, 0, 0, 1)),
+      color-stop(15%, rgba(255, 255, 0, 1)),
+      color-stop(30%, rgba(0, 255, 0, 1)),
+      color-stop(50%, rgba(0, 255, 255, 1)),
+      color-stop(65%, rgba(0, 0, 255, 1)),
+      color-stop(80%, rgba(255, 0, 255, 1)),
+      color-stop(100%, rgba(255, 0, 0, 1)));
+    border: solid 2px pink !important;
+    height: 5px !important;
+
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,13 @@
+
+.wraps{
+  display: flex;
+  flex-wrap: wrap;
+  align-content:center;
+  justify-content: center;
+
+}
+.box{
+  flex: 1 1 300px;
+  border: 5px solid goldenrod;
+  margin: 10px;
+}
