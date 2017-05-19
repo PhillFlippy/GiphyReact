@@ -13,8 +13,9 @@ body {
 }
 
 .form-group{
-  width: 1000px;
-  margin-left: 20%;
+  max-width: 800px;
+  align-content: center;
+  margin: 0 auto;
 }
 
 .active{
