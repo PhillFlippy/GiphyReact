@@ -49,6 +49,14 @@ body {
       color-stop(65%, rgba(0, 0, 255, 1)),
       color-stop(80%, rgba(255, 0, 255, 1)),
       color-stop(100%, rgba(255, 0, 0, 1)));
+        background: -webkit-linear-gradient(linear,  left ,
+      color-stop(0%, rgba(255, 0, 0, 1)),
+      color-stop(15%, rgba(255, 255, 0, 1)),
+      color-stop(30%, rgba(0, 255, 0, 1)),
+      color-stop(50%, rgba(0, 255, 255, 1)),
+      color-stop(65%, rgba(0, 0, 255, 1)),
+      color-stop(80%, rgba(255, 0, 255, 1)),
+      color-stop(100%, rgba(255, 0, 0, 1)));
 }
 hr {
    background: linear-gradient(left ,
