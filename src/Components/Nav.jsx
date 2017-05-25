@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 import '../App.css';
-import {DropdownButton, MenuItem} from 'react-bootstrap';
 class Nav extends Component{
   render(){
     return(
@@ -13,14 +11,14 @@ class Nav extends Component{
 
     <div className="navbar-header">
 
-      <Link className="navbar-brand" activeClassName="navbar-brand" to="/">React Giphy</Link>
+      <Link className="navbar-brand"  to="/">React Giphy</Link>
     </div>
 
 
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul className="nav navbar-nav">
-        <li><Link to="/" activeClassName="active" >Search</Link ></li>
-        <li><Link to="/trending" activeClassName="active">Trending</Link ></li>
+        <li><Link to="/" >Search</Link ></li>
+        <li><Link to="/trending" >Trending</Link ></li>
 
       </ul>
     </div>

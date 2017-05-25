@@ -10,21 +10,18 @@ class App extends Component {
     super(props);
     this.state={
       query:'',
-      list: {},
+      list: [],
       load: false,
       single: false
     };
   }
   search(){
     let {query} = this.state;
-    console.log('query'+query);
     query = encodeURIComponent(query);
-    console.log('query2'+query);
     const BASE_URL = 'https://api.giphy.com/v1/gifs/search?q';
     let search_url = `${BASE_URL}=${query}&api_key=dc6zaTOxFJmzC`;
     fetch(search_url, {method: 'GET'}).then(response => response.json()).then(json => {
       const list = json.data;
-      console.log('list '+ list[1].embed_url);
       this.setState({
         list,
         load: true,
@@ -39,7 +36,6 @@ class App extends Component {
     const FETCH_URL = `https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${query}`;
     fetch(FETCH_URL, {method: 'GET'}).then(response => response.json()).then(json => {
       const list = json.data;
-      console.log('list '+ list.url);
       this.setState({
         list,
         load: false,

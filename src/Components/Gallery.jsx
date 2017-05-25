@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import '../Gallery.css';
-import Nav from './Nav.jsx';
+
 
 
 class Gallery extends Component {
@@ -17,11 +17,10 @@ class Gallery extends Component {
       <div className="wraps">{
           gallery.map((image, k) => {
             const image_url = image.images.fixed_height.url;
-              console.log('image url ' + image_url);
             return (
               <div key={k}  >
 
-              <a href={image.url}>  <img src={image_url}  className='box'/></a>
+              <a href={image.url}>  <img src={image_url} alt={image.slug} className='box'/></a>
               </div>
             )
           })
