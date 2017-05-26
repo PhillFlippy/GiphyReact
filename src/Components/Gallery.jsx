@@ -12,8 +12,9 @@ class Gallery extends Component {
     }
   }
   render() {
-    const {gallery} = this.props;
+    const {gallery} = this.props; //recieved gallery as a prop so now we take it from the props using the es6 method.
     return (
+      //loop through all of the data in the gallery array and display the image url and use the slug(image name) as the alt text
       <div className="wraps">{
           gallery.map((image, k) => {
             const image_url = image.images.fixed_height.url;

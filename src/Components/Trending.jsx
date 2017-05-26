@@ -1,3 +1,5 @@
+//Component that fetches the most popular gifs.
+
 import React, { Component } from 'react';
 
 import '../App.css';
@@ -14,6 +16,7 @@ class Trending extends Component {
     };
   }
   componentWillMount(){
+    //after the page loads the method will  fetch the json of gif data.
     let search_url = `https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC`;
     fetch(search_url, {method: 'GET'}).then(response => response.json()).then(json => {
       const list = json.data;
@@ -35,7 +38,7 @@ componentDidMount(){
     return (
       <div className="App">
         <Nav />
-        {
+        { //is the website loaded? If so display the data.
           this.state.load ? <div> <Gallery gallery={this.state.list} /> </div> : <div></div>
         }
 

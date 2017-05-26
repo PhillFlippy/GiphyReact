@@ -16,6 +16,7 @@ class App extends Component {
     };
   }
   search(){
+    //query the API for the users input
     let {query} = this.state;
     query = encodeURIComponent(query);
     const BASE_URL = 'https://api.giphy.com/v1/gifs/search?q';
@@ -24,13 +25,14 @@ class App extends Component {
       const list = json.data;
       this.setState({
         list,
-        load: true,
-        single: false
+        load: true, //has the user put in some input into the search field?
+        single: false //is the user only requesting one output for their search?
       })
     })
 
   }
   random(){
+    //get the random API call
     let {query} = this.state;
     query = encodeURIComponent(query);
     const FETCH_URL = `https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${query}`;
@@ -67,8 +69,8 @@ class App extends Component {
       </InputGroup>
     </FormGroup>
     {
-      this.state.load ? <div> <Gallery gallery={this.state.list} /> </div> : <div></div> } {
-      this.state.single ? <div>   <a href={this.state.list.image_original_url}>  <img src={this.state.list.image_original_url}  className='box' alt='blah'/></a></div> : <div></div>
+      this.state.load ? <div> <Gallery gallery={this.state.list} /> </div> : <div></div> } { //display only after the user has hit search
+      this.state.single ? <div>   <a href={this.state.list.image_original_url}>  <img src={this.state.list.image_original_url}  className='box' alt='blah'/></a></div> : <div></div> //display if the user has selected random
     }
       </div>
     );

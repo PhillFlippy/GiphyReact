@@ -1,3 +1,4 @@
+//Navigation menu to be displayed at the top of the page.
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
